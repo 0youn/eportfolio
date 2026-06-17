@@ -1,0 +1,1025 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>e-portfolio</title>
+
+    <!-- Polices Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;1,9..40,400&family=JetBrains+Mono:wght@400;500&display=swap" />
+
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body id="top">
+    <!-- ============================================================
+       EN-TÊTE / NAVIGATION
+       ============================================================ -->
+    <header class="site-header">
+        <nav class="nav container">
+            <p class="nav__logo">e-portfolio<span class="dot">.</span></p>
+
+            <button class="nav__toggle" id="navToggle" aria-label="Ouvrir le menu" aria-expanded="false">
+                <span></span><span></span><span></span>
+            </button>
+
+            <ul class="nav__links" id="navLinks">
+                <li><a href="#apropos">À propos</a></li>
+                <li><a href="#competences">Compétences</a></li>
+                <li><a href="#parcours">Relevé</a></li>
+                <li><a href="#sae">SAÉ 2.03</a></li>
+                <li><a href="#contact" class="nav__cta">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- ============================================================
+         HERO / ACCUEIL
+         ============================================================ -->
+        <section class="hero container" id="accueil">
+            <div class="hero__text reveal">
+                <p class="eyebrow">BUT R&amp;T</p>
+                <h1 class="hero__title">
+                    Bonjour, je suis <span class="hl">Younès BACH</span>.
+                </h1>
+                <p class="hero__lead">
+                    Étudiant en
+                    <strong>BUT Réseaux &amp; Télécommunications</strong>.
+                    Ce portfolio rassemble les traces et les preuves de mon
+                    travail, et atteste de mes
+                    <strong>trois compétences</strong> du tronc
+                    commun&nbsp;: administrer, connecter et programmer.
+                </p>
+                <div class="hero__actions">
+                    <a href="#competences" class="btn btn--solid">Voir mes compétences</a>
+                </div>
+
+                <ul class="hero__stats">
+                    <li>
+                        <span class="stat__num">3</span><span class="stat__label">compétences</span>
+                    </li>
+                    <li>
+                        <span class="stat__num">9</span><span class="stat__label">SAÉ(s) réalisées</span>
+                    </li>
+                    <li>
+                        <span class="stat__num">S2</span><span class="stat__label">En cours</span>
+                    </li>
+                </ul>
+            </div>
+
+            <aside class="hero__card reveal">
+                <div class="terminal">
+                    <div class="terminal__bar">
+                        <span></span><span></span><span></span>
+                        <em>younes@hypernova:~</em>
+                    </div>
+                    <pre class="terminal__body"><span class="c-prompt">$</span> whoami
+younes - étudiant BUT1 RT
+
+<span class="c-prompt">$</span> cat competences.txt
+[1] Administrer les réseaux et l'Internet
+[2] Connecter les entreprises et les usagers
+[3] Créer des outils et applications
+
+<span class="c-prompt">$</span> cat semestre.txt
+S1 - terminé   <span class="c-ok">✓</span>
+S2 - en cours  <span class="c-warn">~</span>
+
+<span class="c-prompt">$</span> |
+</pre>
+                </div>
+            </aside>
+        </section>
+
+        <!-- ============================================================
+         À PROPOS
+         ============================================================ -->
+        <section class="section container" id="apropos">
+            <header class="section__head reveal">
+                <span class="section__index">01</span>
+                <h2 class="section__title">À propos</h2>
+            </header>
+
+            <div class="about">
+                <div class="about__text reveal">
+                    <p>
+                        Je suis actuellement en première année de
+                        <strong>BUT Réseaux &amp; Télécommunications</strong>. Cette formation me permet de découvrir
+                        trois
+                        grands domaines complémentaires&nbsp;: l'<strong>administration des réseaux</strong>, la
+                        <strong>transmission de l'information</strong> et le
+                        <strong>développement d'outils informatiques</strong>.
+                    </p>
+                    <p>
+                        <em>Motivé par l'apprentissage des technologies de
+                            transmission et des infrastructures réseaux.
+                            J'ai décroché une alternance chez Orange en tant
+                            que technicien interventions clients, ce qui me
+                            motive d'avantage à continuer dans ce
+                            domaine.</em>
+                    </p>
+
+                    <ul class="about__list">
+                        <li>
+                            <i class="ic">▹</i> Réseaux locaux &amp;
+                            équipements actifs
+                        </li>
+                        <li>
+                            <i class="ic">▹</i> Systèmes d'exploitation
+                            &amp; ligne de commande
+                        </li>
+                        <li>
+                            <i class="ic">▹</i> Programmation &amp;
+                            technologies Web (HTML / CSS)
+                        </li>
+                        <li>
+                            <i class="ic">▹</i> Travail en équipe &amp;
+                            gestion de projet
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="about__side reveal">
+                    <dl class="meta">
+                        <div>
+                            <dt>Formation</dt>
+                            <dd>BUT R&amp;T — 1<sup>re</sup> année</dd>
+                        </div>
+                        <div>
+                            <dt>Domaines</dt>
+                            <dd>Réseaux · Télécoms · Dev</dd>
+                        </div>
+                        <div>
+                            <dt>Outils</dt>
+                            <dd>Cisco · Linux · pfSense · HTML/CSS</dd>
+                        </div>
+                        <div>
+                            <dt>Langues</dt>
+                            <dd>Français · Anglais (B2 Cambridge)</dd>
+                        </div>
+                    </dl>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================================================
+         COMPÉTENCES
+         ============================================================ -->
+        <section class="section container" id="competences">
+            <header class="section__head reveal">
+                <span class="section__index">02</span>
+                <h2 class="section__title">Mes trois compétences</h2>
+                <p class="section__sub">
+                    Chaque compétence est attestée par ses
+                    <strong>composantes essentielles</strong>, ses
+                    <strong>situations professionnelles</strong>, ses
+                    <strong>apprentissages critiques</strong> (niveau BUT1)
+                    et les <strong>traces &amp; preuves</strong> collectées
+                    au fil des TD, TP et SAÉ.
+                </p>
+            </header>
+
+            <!-- ---------- COMPÉTENCE 1 : ADMINISTRER ---------- -->
+            <article class="comp comp--c1 reveal" id="competence-1">
+                <div class="comp__top">
+                    <span class="comp__num">01</span>
+                    <div>
+                        <p class="comp__ue">UE 1.1 · Administrer</p>
+                        <h3 class="comp__title">
+                            Administrer les réseaux et l'Internet
+                        </h3>
+                        <p class="comp__level">
+                            Niveau BUT1 —
+                            <em>Assister l'administrateur du réseau</em>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="comp__grid">
+                    <div class="block">
+                        <h4 class="block__title">
+                            Composantes essentielles
+                        </h4>
+                        <ul class="ce-list">
+                            <li>
+                                <code>CE1.01</code> en choisissant les
+                                solutions et technologies réseaux adaptées
+                            </li>
+                            <li>
+                                <code>CE1.02</code> en respectant les
+                                principes fondamentaux de la sécurité
+                                informatique
+                            </li>
+                            <li>
+                                <code>CE1.03</code> en utilisant une
+                                approche rigoureuse pour la résolution des
+                                dysfonctionnements
+                            </li>
+                            <li>
+                                <code>CE1.04</code> en respectant les règles
+                                métiers
+                            </li>
+                            <li>
+                                <code>CE1.05</code> en assurant une veille
+                                technologique
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="block">
+                        <h4 class="block__title">
+                            Situations professionnelles
+                        </h4>
+                        <ul class="sp-list">
+                            <li>
+                                Conception et administration de
+                                l'infrastructure du réseau d'une entreprise
+                            </li>
+                            <li>
+                                Installation et administration des services
+                                réseau d'une entreprise
+                            </li>
+                            <li>
+                                Déploiement et administration des solutions
+                                fixes pour les clients d'un opérateur
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="block">
+                    <h4 class="block__title">
+                        Apprentissages critiques (BUT1)
+                    </h4>
+                    <ul class="ac-list">
+                        <li>
+                            <code>AC11.01</code> Maîtriser les lois
+                            fondamentales de l'électricité pour intervenir
+                            sur des équipements R&amp;T
+                        </li>
+                        <li>
+                            <code>AC11.02</code> Comprendre l'architecture
+                            et les fondements des systèmes numériques et de
+                            l'Internet
+                        </li>
+                        <li>
+                            <code>AC11.03</code> Configurer les fonctions de
+                            base du réseau local
+                        </li>
+                        <li>
+                            <code>AC11.04</code> Maîtriser les rôles des
+                            systèmes d'exploitation pour configurer et
+                            administrer
+                        </li>
+                        <li>
+                            <code>AC11.05</code> Identifier les
+                            dysfonctionnements du réseau local et savoir les
+                            signaler
+                        </li>
+                        <li>
+                            <code>AC11.06</code> Installer un poste client
+                            et expliquer la procédure mise en place
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="proofs">
+                    <h4 class="block__title">Traces &amp; preuves</h4>
+                    <div class="proof-grid">
+                        <a class="proof" href="assets/sae101.pdf" target="_blank" aria-label="Voir la SAÉ 1.01">
+                            <span class="proof__tag">SAÉ 1.01</span>
+                            <p class="proof__name">
+                                Sensibilisation à l'hygiène informatique et
+                                à la cybersécurité
+                            </p>
+                            <span class="proof__meta">AC11.04 · CE1.02</span>
+                        </a>
+                        <a class="proof" href="assets/sae102.pdf" target="_blank" aria-label="Voir la SAÉ 1.02">
+                            <span class="proof__tag">SAÉ 1.02</span>
+                            <p class="proof__name">
+                                S'initier aux réseaux informatiques
+                            </p>
+                            <span class="proof__meta">AC11.03 · AC11.05</span>
+                        </a>
+                        <div class="proof proof--soon" aria-label="SAÉ 2.01 à venir">
+                            <span class="proof__tag">SAÉ 2.01</span>
+                            <p class="proof__name">
+                                Construire un réseau informatique pour une
+                                petite structure
+                            </p>
+                            <span class="proof__meta">En cours · S2</span>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <!-- ---------- COMPÉTENCE 2 : CONNECTER ---------- -->
+            <article class="comp comp--c2 reveal" id="competence-2">
+                <div class="comp__top">
+                    <span class="comp__num">02</span>
+                    <div>
+                        <p class="comp__ue">UE 1.2 · Connecter</p>
+                        <h3 class="comp__title">
+                            Connecter les entreprises et les usagers
+                        </h3>
+                        <p class="comp__level">
+                            Niveau BUT1 —
+                            <em>Découvrir les transmissions et la ToIP</em>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="comp__grid">
+                    <div class="block">
+                        <h4 class="block__title">
+                            Composantes essentielles
+                        </h4>
+                        <ul class="ce-list">
+                            <li>
+                                <code>CE2.01</code> en communiquant avec le
+                                client et les acteurs impliqués, parfois en
+                                anglais
+                            </li>
+                            <li>
+                                <code>CE2.02</code> en faisant preuve d'une
+                                démarche scientifique
+                            </li>
+                            <li>
+                                <code>CE2.03</code> en choisissant les
+                                solutions et technologies adaptées
+                            </li>
+                            <li>
+                                <code>CE2.04</code> en proposant des
+                                solutions respectueuses de l'environnement
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="block">
+                        <h4 class="block__title">
+                            Situations professionnelles
+                        </h4>
+                        <ul class="sp-list">
+                            <li>
+                                Déploiement des supports et systèmes de
+                                transmission
+                            </li>
+                            <li>
+                                Mise en service des équipements d'accès fixe
+                                ou mobile d'un opérateur
+                            </li>
+                            <li>
+                                Déploiement et administration des accès sans
+                                fil pour l'entreprise
+                            </li>
+                            <li>
+                                Déploiement des systèmes de communications
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="block">
+                    <h4 class="block__title">
+                        Apprentissages critiques (BUT1)
+                    </h4>
+                    <ul class="ac-list">
+                        <li>
+                            <code>AC12.01</code> Mesurer, analyser et
+                            commenter les signaux
+                        </li>
+                        <li>
+                            <code>AC12.02</code> Caractériser des systèmes
+                            de transmissions élémentaires et leur
+                            modélisation
+                        </li>
+                        <li>
+                            <code>AC12.03</code> Déployer des supports de
+                            transmission
+                        </li>
+                        <li>
+                            <code>AC12.04</code> Connecter les systèmes de
+                            ToIP
+                        </li>
+                        <li>
+                            <code>AC12.05</code> Communiquer avec un tiers
+                            et adapter son discours et sa langue
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="proofs">
+                    <h4 class="block__title">Traces &amp; preuves</h4>
+                    <div class="proof-grid">
+                        <a class="proof" href="assets/sae103.pdf" target="_blank" aria-label="Voir la SAÉ 1.03">
+                            <span class="proof__tag">SAÉ 1.03</span>
+                            <p class="proof__name">
+                                Découvrir un dispositif de transmission
+                            </p>
+                            <span class="proof__meta">AC12.01 · AC12.03</span>
+                        </a>
+                        <div class="proof proof--soon" aria-label="SAÉ 2.02 à venir">
+                            <span class="proof__tag">SAÉ 2.02</span>
+                            <p class="proof__name">
+                                Mesurer et caractériser un signal ou un
+                                système
+                            </p>
+                            <span class="proof__meta">En cours · S2</span>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <!-- ---------- COMPÉTENCE 3 : PROGRAMMER ---------- -->
+            <article class="comp comp--c3 reveal" id="competence-3">
+                <div class="comp__top">
+                    <span class="comp__num">03</span>
+                    <div>
+                        <p class="comp__ue">UE 1.3 · Programmer</p>
+                        <h3 class="comp__title">
+                            Créer des outils et applications informatiques
+                            pour les R&amp;T
+                        </h3>
+                        <p class="comp__level">
+                            Niveau BUT1 —
+                            <em>S'intégrer dans un service informatique</em>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="comp__grid">
+                    <div class="block">
+                        <h4 class="block__title">
+                            Composantes essentielles
+                        </h4>
+                        <ul class="ce-list">
+                            <li>
+                                <code>CE3.01</code> en étant à l'écoute des
+                                besoins du client
+                            </li>
+                            <li>
+                                <code>CE3.02</code> en documentant le
+                                travail réalisé
+                            </li>
+                            <li>
+                                <code>CE3.03</code> en utilisant les outils
+                                numériques à bon escient
+                            </li>
+                            <li>
+                                <code>CE3.04</code> en choisissant les
+                                outils de développement adaptés
+                            </li>
+                            <li>
+                                <code>CE3.05</code> en intégrant les
+                                problématiques de sécurité
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="block">
+                        <h4 class="block__title">
+                            Situations professionnelles
+                        </h4>
+                        <ul class="sp-list">
+                            <li>
+                                Conception, déploiement et maintenance du
+                                système d'information d'une entreprise
+                            </li>
+                            <li>
+                                Automatisation du déploiement et de la
+                                maintenance des outils logiciels
+                            </li>
+                            <li>
+                                Développement d'outils informatiques à usage
+                                interne d'une équipe
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="block">
+                    <h4 class="block__title">
+                        Apprentissages critiques (BUT1)
+                    </h4>
+                    <ul class="ac-list">
+                        <li>
+                            <code>AC13.01</code> Utiliser un système
+                            informatique et ses outils
+                        </li>
+                        <li>
+                            <code>AC13.02</code> Lire, exécuter, corriger et
+                            modifier un programme
+                        </li>
+                        <li>
+                            <code>AC13.03</code> Traduire un algorithme,
+                            dans un langage et pour un environnement donné
+                        </li>
+                        <li>
+                            <code>AC13.04</code> Connaître l'architecture et
+                            les technologies d'un site Web
+                        </li>
+                        <li>
+                            <code>AC13.05</code> Choisir les mécanismes de
+                            gestion de données et argumenter ses choix
+                        </li>
+                        <li>
+                            <code>AC13.06</code> S'intégrer dans un
+                            environnement propice au travail collaboratif
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="proofs">
+                    <h4 class="block__title">Traces &amp; preuves</h4>
+                    <div class="proof-grid">
+                        <a class="proof" href="assets/sae104.pdf" target="_blank" aria-label="Voir la SAÉ 1.04">
+                            <span class="proof__tag">SAÉ 1.04</span>
+                            <p class="proof__name">
+                                Se présenter sur Internet
+                            </p>
+                            <span class="proof__meta">AC13.04 · CE3.02</span>
+                        </a>
+                        <a class="proof" href="assets/sae105.pdf" target="_blank" aria-label="Voir la SAÉ 1.05">
+                            <span class="proof__tag">SAÉ 1.05</span>
+                            <p class="proof__name">Traiter des données</p>
+                            <span class="proof__meta">AC13.02 · AC13.05</span>
+                        </a>
+                        <a class="proof proof--featured" href="#sae" aria-label="Voir le détail de la SAÉ 2.03">
+                            <span class="proof__tag">SAÉ 2.03</span>
+                            <p class="proof__name">
+                                Filmographie — Solution informatique pour
+                                l'entreprise
+                            </p>
+                            <span class="proof__meta">Voir la SAÉ ↓</span>
+                        </a>
+                    </div>
+                </div>
+            </article>
+        </section>
+
+        <!-- ============================================================
+         PARCOURS / RELEVÉ DE NOTES
+         ============================================================ -->
+        <section class="section container" id="parcours">
+            <header class="section__head reveal">
+                <span class="section__index">03</span>
+                <h2 class="section__title">Relevé de notes</h2>
+                <p class="section__sub">
+                    Synthèse des moyennes par <strong>UE</strong> et des
+                    <strong>ressources marquantes</strong>
+                    du semestre 1 (terminé) et du semestre 2 (en cours).
+                </p>
+            </header>
+
+            <!-- SEMESTRE 1 -->
+            <h3 class="parcours__subtitle reveal">
+                Semestre 1
+                <span class="parcours__badge parcours__badge--done">Terminé</span>
+            </h3>
+
+            <div class="ue-cards">
+                <div class="ue-card ue-card--c1 reveal">
+                    <span class="ue-card__tag">UE 1.1 · Administrer</span>
+                    <span class="ue-card__avg">11.29</span>
+                </div>
+                <div class="ue-card ue-card--c2 reveal">
+                    <span class="ue-card__tag">UE 1.2 · Connecter</span>
+                    <span class="ue-card__avg">07.69</span>
+                </div>
+                <div class="ue-card ue-card--c3 reveal">
+                    <span class="ue-card__tag">UE 1.3 · Programmer</span>
+                    <span class="ue-card__avg">12.87</span>
+                </div>
+            </div>
+
+            <div class="resources reveal">
+                <h3 class="card__kicker">Ressources marquantes du S1</h3>
+                <ul class="res-list">
+                    <li>
+                        <code>R1.02</code> Principes et architecture des
+                        réseaux <span class="res-grade">14.19</span>
+                    </li>
+                    <li>
+                        <code>R1.08</code> Bases des systèmes d'exploitation
+                        <span class="res-grade">16.40</span>
+                    </li>
+                    <li>
+                        <code>R1.09</code> Introduction aux technologies Web
+                        <span class="res-grade">16.80</span>
+                    </li>
+                    <li>
+                        <code>R1.10</code> Anglais de communication &amp;
+                        vocabulaire technique
+                        <span class="res-grade">16.00</span>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Semestre 2 -->
+            <h3 class="parcours__subtitle parcours__subtitle--s2 reveal">
+                Semestre 2
+                <span class="parcours__badge parcours__badge--inprogress">En cours</span>
+            </h3>
+
+            <div class="ue-cards">
+                <div class="ue-card ue-card--c1 reveal">
+                    <span class="ue-card__tag">UE 2.1 · Administrer</span>
+                    <span class="ue-card__avg">11.68</span>
+                </div>
+                <div class="ue-card ue-card--c2 reveal">
+                    <span class="ue-card__tag">UE 2.2 · Connecter</span>
+                    <span class="ue-card__avg">07.09</span>
+                </div>
+                <div class="ue-card ue-card--c3 reveal">
+                    <span class="ue-card__tag">UE 2.3 · Programmer</span>
+                    <span class="ue-card__avg">10.33</span>
+                </div>
+            </div>
+
+            <div class="resources reveal">
+                <h3 class="card__kicker">Ressources marquantes du S2</h3>
+                <ul class="res-list">
+                    <li>
+                        <code>R2.03</code> Bases des services réseaux
+                        <span class="res-grade">20.00</span>
+                    </li>
+                    <li>
+                        <code>R2.04</code> Initiation à la téléphonie
+                        d'entreprise <span class="res-grade">18.00</span>
+                    </li>
+                    <li>
+                        <code>R2.10</code> Anglais de communication &amp;
+                        développement de l'anglais technique
+                        <span class="res-grade">17.33</span>
+                    </li>
+                    <li>
+                        <code>R2.12</code> PPP : formalisation du projet
+                        <span class="res-grade">14.50</span>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- ============================================================
+         SAÉ 2.03 — Page individuelle
+         Structure : contexte, tâches personnelles, preuves, résumé EN
+         ============================================================ -->
+        <section class="section container" id="sae">
+            <header class="section__head reveal">
+                <span class="section__index">04</span>
+                <h2 class="section__title">
+                    Mettre en place une solution informatique pour
+                    l'entreprise (SAÉ 2.03)
+                </h2>
+                <p class="section__sub">
+                    Retour réflexif sur la
+                    <strong>SAÉ 2.03 — Filmographie</strong>, une
+                    application web Django réalisée en trinôme dans le cadre
+                    de la compétence <em>Programmer</em>.
+                </p>
+            </header>
+
+            <!-- En-tête de projet -->
+            <article class="sae-project reveal">
+                <div class="sae-project__top">
+                    <span class="sae-project__tag">SAÉ 2.03 · UE 2.3 Programmer</span>
+                    <h3 class="sae-project__title">
+                        Filmographie — banque de films en ligne
+                    </h3>
+                    <p class="sae-project__lead">
+                        Application web de gestion d'une banque de films
+                        (catalogue, acteurs, catégories, avis notés)
+                        développée avec <strong>Django 5</strong> et
+                        <strong>PostgreSQL</strong>. Le projet inclut
+                        authentification, CRUD complet, import CSV et
+                        synchronisation avec l'<strong>API TMDB</strong>.
+                    </p>
+                    <div class="sae-project__meta">
+                        <span><strong>Cadre</strong> · BUT R&amp;T —
+                            2025-2026</span>
+                        <span><strong>Trinôme</strong> · Atakan GOCER,
+                            Mathieu NAREL, Younès BACH</span>
+                        <span><strong>Stack</strong> · Python · Django ·
+                            PostgreSQL · Nginx · Gunicorn</span>
+                    </div>
+                    <div class="sae-project__actions">
+                        <a class="btn btn--solid" href="https://github.com/Al3m1rr/sae-filmographie" target="_blank"
+                            rel="noopener">
+                            Voir le code sur GitHub
+                        </a>
+                    </div>
+                </div>
+            </article>
+
+            <!-- 1. Contexte -->
+            <article class="sae-block reveal">
+                <header class="sae-block__head">
+                    <span class="sae-block__num">01</span>
+                    <h3 class="sae-block__title">Contexte du projet</h3>
+                </header>
+                <div class="sae-block__body">
+                    <p>
+                        La <strong>SAÉ 2.03</strong> demande de concevoir et
+                        déployer une
+                        <strong>solution informatique pour une
+                            entreprise</strong>. Le sujet de notre trinôme est
+                        <em>une filmographie</em>. C'est une application web
+                        qui simule la vitrine d'une médiathèque numérique :
+                        un catalogue de films consultable par tous les
+                        utilisateurs connectés, enrichi par des commentaires
+                        notés ainsi que des détails sur le casting des
+                        films.
+                    </p>
+                    <p>
+                        Le projet mobilise plusieurs ressources du
+                        semestre&nbsp;: <code>R2.07</code> sources de
+                        données, <code>R2.08</code> analyse et traitement de
+                        données structurées, <code>R2.09</code> initiation
+                        au développement Web, ainsi que les ressources de
+                        base de la compétence Programmer du S1
+                        (<code>R1.07</code>, <code>R1.08</code>,
+                        <code>R1.09</code>). Côté infrastructure,
+                        l'application est pensée pour être déployée sur une
+                        <strong>VM Linux</strong> avec Nginx et Gunicorn
+                        comme serveur d'application.
+                    </p>
+                    <p>
+                        L'objectif pédagogique principal est de manipuler un
+                        <strong>framework MVT</strong>, de modéliser une
+                        base de données relationnelle et de travailler dans
+                        un <strong>environnement collaboratif</strong> (Git,
+                        GitHub).
+                    </p>
+                </div>
+            </article>
+
+            <!-- 2. Tâches personnelles -->
+            <article class="sae-block reveal">
+                <header class="sae-block__head">
+                    <span class="sae-block__num">02</span>
+                    <h3 class="sae-block__title">
+                        Mes tâches personnelles
+                    </h3>
+                </header>
+                <div class="sae-block__body">
+                    <p>
+                        Le projet a été mené à trois. Ma contribution s'est
+                        concentrée sur la
+                        <strong>documentation technique</strong>, la
+                        <strong>logique CRUD</strong> et le
+                        <strong>routage</strong> de l'application.
+                    </p>
+                    <ul class="sae-tasks">
+                        <li>
+                            <span class="sae-tasks__label">Documentation</span>
+                            <div>
+                                <strong>Rédaction complète du
+                                    <code>README.md</code></strong>
+                                du dépôt : présentation du projet, schéma
+                                relationnel, stack technique, procédure
+                                d'installation, configuration PostgreSQL,
+                                format du CSV d'import, et guide de
+                                déploiement sur VM Linux (PostgreSQL +
+                                Gunicorn + Nginx).
+                            </div>
+                        </li>
+                        <li>
+                            <span class="sae-tasks__label">CRUD Acteurs</span>
+                            <div>
+                                Implémentation des vues d'ajout, de
+                                modification et de suppression pour l'entité
+                                <code>Acteur</code>. Création du formulaire
+                                <code>ActeurForm</code>, gestion de l'upload
+                                des photos (<code>ImageField</code>) et des
+                                messages de confirmation Django.
+                            </div>
+                        </li>
+                        <li>
+                            <span class="sae-tasks__label">CRUD Catégories</span>
+                            <div>
+                                Implémentation des vues CRUD pour les
+                                <code>Categorie</code> : ajout, édition et
+                                suppression avec contrainte d'unicité sur le
+                                nom, formulaire <code>CategorieForm</code>,
+                                et template
+                                <code>categorie_form.html</code>.
+                            </div>
+                        </li>
+                        <li>
+                            <span class="sae-tasks__label">CRUD Films</span>
+                            <div>
+                                Implémentation des vues CRUD pour les
+                                <code>Film</code> : formulaire
+                                <code>FilmForm</code>
+                                avec sélection multiple d'acteurs
+                                (ManyToMany), prise en charge des affiches
+                                via upload ou via URL, et page de
+                                confirmation de suppression mutualisée
+                                (<code>confirm_delete.html</code>).
+                            </div>
+                        </li>
+                        <li>
+                            <span class="sae-tasks__label">Routage</span>
+                            <div>
+                                Conception et écriture du fichier
+                                <code>movies/urls.py</code>&nbsp;:
+                                structuration de toutes les routes de
+                                l'application (CRUD, import CSV, auth) avec
+                                leurs noms d'URL réutilisables dans les
+                                templates (<code>{% url %}</code>).
+                            </div>
+                        </li>
+                        <li>
+                            <span class="sae-tasks__label">Modifications ponctuelles</span>
+                            <div>
+                                Diverses corrections et ajustements
+                                transverses (templates, validations de
+                                formulaires, messages utilisateurs,
+                                relecture du <code>settings.py</code>).
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </article>
+
+            <!-- 3. Preuves d'acquisition de compétences -->
+            <article class="sae-block reveal">
+                <header class="sae-block__head">
+                    <span class="sae-block__num">03</span>
+                    <h3 class="sae-block__title">
+                        Preuves d'acquisition de compétences
+                    </h3>
+                </header>
+                <div class="sae-block__body">
+                    <p>
+                        La <strong>composante essentielle</strong> visée est
+                        <code>CE3.02</code>
+                        <em>« en documentant le travail réalisé »</em>,
+                        complétée par <code>CE3.03</code>
+                        <em>« en utilisant les outils numériques à bon
+                            escient »</em>. Le tableau ci-dessous présente chaque
+                        <strong>apprentissage critique</strong> et la preuve
+                        concrète apportée par mes tâches personnelles.
+                    </p>
+                    <ul class="sae-evidence">
+                        <li>
+                            <code class="sae-evidence__ac">AC13.01</code>
+                            <div>
+                                <strong>Utiliser un système informatique et ses
+                                    outils</strong>
+                                <p>
+                                    Mise en place de l'environnement Django
+                                    (venv, pip, manage.py) et utilisation de
+                                    la CLI Git tout au long du projet
+                                    (branches, commits, pull requests).
+                                </p>
+                            </div>
+                        </li>
+                        <li>
+                            <code class="sae-evidence__ac">AC13.02</code>
+                            <div>
+                                <strong>Lire, exécuter, corriger et modifier un
+                                    programme</strong>
+                                <p>
+                                    Relecture des vues écrites par mes
+                                    camarades et corrections ponctuelles
+                                    (validations de formulaires, gestion du
+                                    CRUD).
+                                </p>
+                            </div>
+                        </li>
+                        <li>
+                            <code class="sae-evidence__ac">AC13.03</code>
+                            <div>
+                                <strong>Traduire un algorithme dans un langage
+                                    et un environnement donné</strong>
+                                <p>
+                                    Implémentation Python/Django du CRUD
+                                    complet pour trois entités (Acteur,
+                                    Catégorie, Film) à partir des règles de
+                                    gestion définies en équipe.
+                                </p>
+                            </div>
+                        </li>
+                        <li>
+                            <code class="sae-evidence__ac">AC13.04</code>
+                            <div>
+                                <strong>Connaître l'architecture et les
+                                    technologies d'un site Web</strong>
+                                <p>
+                                    Conception du fichier
+                                    <code>urls.py</code> reliant les
+                                    requêtes HTTP aux vues, et intégration
+                                    de templates dans l'architecture MVT.
+                                </p>
+                            </div>
+                        </li>
+                        <li>
+                            <code class="sae-evidence__ac">AC13.05</code>
+                            <div>
+                                <strong>Choisir les mécanismes de gestion de
+                                    données et argumenter ses choix</strong>
+                                <p>
+                                    Modélisation et documentation du schéma
+                                    relationnel dans le README (5 entités,
+                                    cardinalités, contraintes d'unicité).
+                                </p>
+                            </div>
+                        </li>
+                        <li>
+                            <code class="sae-evidence__ac">AC13.06</code>
+                            <div>
+                                <strong>S'intégrer dans un environnement
+                                    propice au travail collaboratif</strong>
+                                <p>
+                                    Travail en trinôme via GitHub (branches,
+                                    pull requests) et rédaction d'un README
+                                    technique permettant à n'importe quel
+                                    relecteur de relancer le projet en
+                                    local.
+                                </p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </article>
+
+            <!-- 4. Résumé en anglais -->
+            <article class="sae-block sae-block--en reveal">
+                <header class="sae-block__head">
+                    <span class="sae-block__num">04</span>
+                    <h3 class="sae-block__title">English summary</h3>
+                    <span class="sae-block__lang">EN · B2</span>
+                </header>
+                <div class="sae-block__body">
+                    <p>
+                        <em>Filmbank (Filmographie)</em> is a group project
+                        I worked on with two classmates as part of the
+                        <strong>SAÉ 2.03</strong> module of my first year of
+                        <strong>BUT Networks &amp; Telecommunications</strong>. The goal of the project was to design
+                        and build a
+                        web application that an organisation could use to
+                        manage a catalogue of movies.
+                    </p>
+                    <p>
+                        The application is built with
+                        <strong>Django</strong> and a
+                        <strong>PostgreSQL</strong> database. Users can sign
+                        up either as a <em>professional</em> or as an
+                        <em>amateur</em> viewer, browse movies and actors,
+                        and post one rated review per movie. The admin
+                        account have access to a full CRUD interface for
+                        movies, actors and categories, and can also import
+                        movies from a CSV file or from the
+                        <strong>TMDB</strong> API. The project is meant to
+                        be deployed on a Linux virtual machine with
+                        <strong>Nginx</strong> and
+                        <strong>Gunicorn</strong> as the application server.
+                    </p>
+                    <p>
+                        My personal contributions were the technical
+                        <strong>README</strong>, the CRUD interfaces for
+                        actors, categories and films, and the URL routing of
+                        the application. Through this project I improved my
+                        skills in
+                        <strong>relational database design</strong>,
+                        <strong>backend development</strong> and
+                        <strong>collaborative work with Git and GitHub</strong>.
+                    </p>
+                </div>
+            </article>
+        </section>
+
+        <!-- ============================================================
+         CONTACT
+         ============================================================ -->
+        <section class="section container" id="contact">
+            <div class="contact reveal">
+                <span class="section__index">05</span>
+                <h2 class="contact__title">Me contacter</h2>
+                <div class="contact__actions">
+                    <a href="mailto:younes.bach@uha.fr" class="btn btn--solid">younes.bach@uha.fr</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- ============================================================
+       PIED DE PAGE
+       ============================================================ -->
+    <footer class="site-footer">
+        <div class="container footer__inner">
+            <span>© 2026 Younès BACH - e-portfolio BUT R&amp;T</span>
+            <a href="#top" class="footer__top">Haut de page ↑</a>
+        </div>
+    </footer>
+
+    <script src="script.js" defer></script>
+</body>
+
+</html>
