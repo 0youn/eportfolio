@@ -28,6 +28,11 @@
     --c3-soft: #fbeede;
     --c3-ink: #80440a;
 
+    /* Compétence de parcours (DevCloud) */
+    --c4: #6a4bb8;
+    --c4-soft: #efeafa;
+    --c4-ink: #45307d;
+
     /* Couleur d'accent pour les SAÉ "à venir" (cartes dashed) */
     --soon: #8b5cf6;
 
@@ -309,6 +314,17 @@ em {
 
 .btn--solid:hover {
     background: var(--accent-ink);
+    transform: translateY(-2px);
+}
+
+.btn--ghost {
+    color: var(--accent-ink);
+    border: 1px solid var(--line-strong);
+    background: var(--surface);
+}
+
+.btn--ghost:hover {
+    border-color: var(--accent);
     transform: translateY(-2px);
 }
 
@@ -859,6 +875,15 @@ code {
     border-color: color-mix(in srgb, var(--c3) 20%, transparent);
 }
 
+/* Semestre sans relevé disponible */
+.parcours__empty {
+    padding: 1rem 1.2rem;
+    font-size: 0.95rem;
+    color: var(--muted);
+    border: 1px dashed var(--line-strong);
+    border-radius: var(--radius-sm);
+}
+
 /* ============================================================
    CONTACT
    ============================================================ */
@@ -1000,6 +1025,251 @@ code {
     display: flex;
     flex-wrap: wrap;
     gap: 0.8rem;
+}
+
+/* Capture d'écran du projet */
+.sae-figure {
+    margin: 1.6rem 0 0;
+}
+
+.sae-figure img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border: 1px solid var(--line);
+    border-radius: var(--radius-sm);
+}
+
+.sae-figure figcaption {
+    margin-top: 0.6rem;
+    font-size: 0.85rem;
+    color: var(--muted);
+}
+
+/* ------------------------------------------------------------
+   Fiches de compétences (SAÉ 3.02)
+   Matrice : contexte / AC / réflexion / traces
+   ------------------------------------------------------------ */
+.fiche {
+    --comp: var(--accent);
+    --comp-soft: var(--accent-soft);
+    --comp-ink: var(--accent-ink);
+    margin-bottom: 1.6rem;
+    padding: 1.8rem 2rem;
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-top: 5px solid var(--comp);
+    border-radius: var(--radius);
+}
+
+.fiche--c1 {
+    --comp: var(--c1);
+    --comp-soft: var(--c1-soft);
+    --comp-ink: var(--c1-ink);
+}
+
+.fiche--c2 {
+    --comp: var(--c2);
+    --comp-soft: var(--c2-soft);
+    --comp-ink: var(--c2-ink);
+}
+
+.fiche--c3 {
+    --comp: var(--c3);
+    --comp-soft: var(--c3-soft);
+    --comp-ink: var(--c3-ink);
+}
+
+.fiche--c4 {
+    --comp: var(--c4);
+    --comp-soft: var(--c4-soft);
+    --comp-ink: var(--c4-ink);
+}
+
+.fiche__head {
+    margin-bottom: 0.4rem;
+}
+
+.fiche__badge {
+    display: inline-block;
+    margin-bottom: 0.6rem;
+    padding: 0.25rem 0.65rem;
+    font-family: var(--font-mono);
+    font-size: 0.72rem;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: var(--comp-ink);
+    background: var(--comp-soft);
+    border-radius: 999px;
+}
+
+.fiche__title {
+    font-family: var(--font-display);
+    font-weight: 700;
+    font-size: clamp(1.25rem, 2.4vw, 1.5rem);
+    line-height: 1.2;
+    letter-spacing: -0.01em;
+}
+
+.fiche__part {
+    margin-top: 1.3rem;
+    padding-top: 1.3rem;
+    border-top: 1px dashed var(--line);
+}
+
+.fiche__part h4 {
+    display: flex;
+    align-items: center;
+    gap: 0.7rem;
+    margin-bottom: 0.8rem;
+    font-family: var(--font-display);
+    font-weight: 700;
+    font-size: 1.05rem;
+}
+
+.fiche__step {
+    display: inline-grid;
+    place-items: center;
+    flex: none;
+    width: 1.7rem;
+    height: 1.7rem;
+    font-size: 0.85rem;
+    color: #fff;
+    background: var(--comp);
+    border-radius: 50%;
+}
+
+.fiche__part > p {
+    margin-bottom: 0.8rem;
+    line-height: 1.7;
+    color: var(--muted);
+}
+
+.fiche__part > p:last-child {
+    margin-bottom: 0;
+}
+
+.fiche__part > p strong {
+    color: var(--ink);
+}
+
+.fiche-list {
+    margin: -0.2rem 0 0.9rem 1.2rem;
+    line-height: 1.6;
+    color: var(--muted);
+}
+
+.fiche-list li {
+    margin-bottom: 0.25rem;
+}
+
+/* AC cités textuellement + justification */
+.fiche-ac {
+    display: grid;
+    gap: 0.8rem;
+    list-style: none;
+}
+
+.fiche-ac li {
+    padding: 0.9rem 1.1rem;
+    background: var(--bg);
+    border-left: 3px solid var(--comp);
+    border-radius: var(--radius-sm);
+}
+
+.fiche-ac q {
+    display: block;
+    margin: 0.5rem 0 0.6rem;
+    font-weight: 500;
+    font-style: italic;
+    color: var(--ink);
+}
+
+.fiche-ac p {
+    font-size: 0.95rem;
+    line-height: 1.6;
+    color: var(--muted);
+}
+
+/* Traces et preuves */
+.fiche-traces {
+    display: grid;
+    gap: 0.5rem;
+    list-style: none;
+}
+
+.fiche-traces li {
+    display: grid;
+    grid-template-columns: 120px 1fr;
+    gap: 0.9rem;
+    align-items: start;
+    padding: 0.65rem 0.9rem;
+    font-size: 0.93rem;
+    line-height: 1.55;
+    color: var(--muted);
+    background: var(--bg);
+    border-radius: var(--radius-sm);
+}
+
+.fiche-traces__type {
+    padding: 0.2rem 0.5rem;
+    font-family: var(--font-mono);
+    font-size: 0.68rem;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    text-align: center;
+    color: var(--comp-ink);
+    background: var(--comp-soft);
+    border-radius: 6px;
+}
+
+.fiche a {
+    color: var(--comp-ink);
+    font-weight: 500;
+    text-decoration: underline;
+    text-underline-offset: 2px;
+}
+
+/* Extraits de code sourcés */
+.code-extract {
+    margin: 1.2rem 0 0;
+}
+
+.code-extract figcaption {
+    margin-bottom: 0.5rem;
+    font-size: 0.85rem;
+    color: var(--muted);
+}
+
+.code-extract pre {
+    overflow-x: auto;
+    padding: 1rem 1.1rem;
+    font-family: var(--font-mono);
+    font-size: 0.8rem;
+    line-height: 1.6;
+    color: #e8e6df;
+    background: #14171b;
+    border-radius: var(--radius-sm);
+}
+
+.code-extract pre code {
+    padding: 0;
+    font-size: inherit;
+    font-weight: 400;
+    white-space: pre;
+    color: inherit;
+    background: none;
+}
+
+.code-add {
+    display: inline-block;
+    min-width: 100%;
+    color: #b6f0c4;
+    background: rgba(46, 160, 67, 0.22);
+}
+
+.fiche .sae-figure {
+    margin-top: 1.2rem;
 }
 
 /* Blocs numérotés (Contexte / Tâches / Preuves / English) */
@@ -1283,5 +1553,21 @@ code {
     .sae-project__meta {
         flex-direction: column;
         gap: 0.4rem;
+    }
+}
+
+/* Fiches SAÉ 3.02 sur petit écran */
+@media (max-width: 680px) {
+    .fiche {
+        padding: 1.3rem 1.1rem;
+    }
+
+    .fiche-traces li {
+        grid-template-columns: 1fr;
+        gap: 0.4rem;
+    }
+
+    .fiche-traces__type {
+        justify-self: start;
     }
 }
